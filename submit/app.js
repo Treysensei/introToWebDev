@@ -1,3 +1,6 @@
-// The "submit" event refreshes your browser by default
-// use "e.preventDefault()" in the first line of your callback function to prevent this
-// remember to pass "e" into the callback function
+// app.js submit directory event-werkbook
+// **UPDATE**
+// use the JS DOM manipulation to add a new input to your form with its own id attribute
+// upon clicking the submit button have the from data show up on the page (new element create and add to DOM)
+// make sure this process canbe repeated many times
+
