@@ -9,6 +9,9 @@
 
 function addTwoNumbers(firstNumber, secondNumber) {
     // your code goes here
+    var sumNum = firstNumber + secondNumber;
+
+    return sumNum;
 }
 
 // Open index.html in your browser, open the JavaScript console, confirm the result.
@@ -30,8 +33,11 @@ console.log("-53 + 40 -> expected: -13, actual: %s", result);
 // You can assume text is a string with at least one character.
 // Write code to return the first character in text.
 // Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Character_access
-function getFirstCharacter(text) {
+function getFirstCharacter(str) {
     // your code goes here.
+        var first = str[0];
+
+        return first;
 }
 
 console.log("getFirstCharacter =====");
@@ -48,12 +54,31 @@ console.log("'Olympus Mons' -> expected: O, actual: %s.", getFirstCharacter("Oly
 // the correct result.
 // Write your code here:
 
+function max(num1, num2, num3){
+
+    var highestNum;
+
+    if(num1 < num2){
+        highestNum = num2;
+    }
+    else{
+        highestNum = num1;
+    }
+
+    if(highestNum < num3){
+        
+        highestNum = num3;
+    }
+    return highestNum;
+
+}
+
 // Uncomment the code below to verify your function is working.
-// console.log("max =====");
-// console.log("max(-1, 0, 1) -> expected: 1, actual: %s", max(-1, 0, 1));
-// console.log("max(11, 2, 1) -> expected: 11, actual: %s", max(11, 2, 1));
-// console.log("max(-15.67, 33.293, 0.51) -> expected: 33.293, actual: %s", max(-15.67, 33.293, 0.51));
-// console.log("max(4, 987654321, 0) -> expected: 987654321, actual: %s", max(4, 987654321, 0));
+ console.log("max =====");
+ console.log("max(-1, 0, 1) -> expected: 1, actual: %s", max(-1, 0, 1));
+ console.log("max(11, 2, 1) -> expected: 11, actual: %s", max(11, 2, 1));
+ console.log("max(-15.67, 33.293, 0.51) -> expected: 33.293, actual: %s", max(-15.67, 33.293, 0.51));
+ console.log("max(4, 987654321, 0) -> expected: 987654321, actual: %s", max(4, 987654321, 0));
 
 
 
